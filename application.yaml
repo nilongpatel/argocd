@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
 spec:
   project: default
+  
   source:
     repoURL: https://github.com/nilongpatel/argocd.git
     targetRevision: HEAD
@@ -13,11 +14,10 @@ spec:
     server: https://kubernetes.default.svc
     namespace: myapp
 
-
   syncPolicy:
     syncOptions:
-     - CreateNamespace=ture
+    - CreateNamespace=ture
 
-     automated:
-       selfheal: ture
+    automated:
+       selfHeal: ture
        prune: true
