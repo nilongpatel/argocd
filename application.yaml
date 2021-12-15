@@ -19,5 +19,5 @@ spec:
     - CreateNamespace=ture
 
     automated:
-       selfHeal: ture
-       prune: true
+      selfHeal: true
+      prune: true
