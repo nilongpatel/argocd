@@ -14,7 +14,6 @@ spec:
     server: https://kubernetes.default.svc
     namespace: myapp
 
-
   syncPolicy:
     syncOptions:
     - CreateNamespace=ture
